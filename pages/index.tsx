@@ -50,8 +50,8 @@ function App()
 		<div className="App" >
 			<NavBar index={index} pages={pages}/>
 			<div className="app-wrapper" ref={ref}>
-				{ pages.map( ( { Component, id } ) =>
-					<Wrapper id={id}>
+				{ pages.map( ( { Component, id }, i ) =>
+					<Wrapper id={id} key={`wrapper-${i}`}>
 						<Component />
 					</Wrapper> 
 				) }
