@@ -1,0 +1,69 @@
+
+
+
+.workContainer {
+    display: flex;
+    gap: 60px;
+    margin: 30px 0px;
+}
+
+.workHeader {
+    gap: 15px;
+}
+
+.workSecond {
+    font-size: 3em;
+}
+
+.workBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.workBtn {
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 
+        color 200ms ease,
+        border 300ms ease;
+}
+
+.workBtn:hover {
+    color: var(--5);
+}
+
+.activeWorkBtn {
+    color: var(--5);
+    border-bottom-color: var(--5);
+}
+
+
+.workTitle {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.workDates {
+    color: var(--3); 
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+.workDescs {
+    height: 40vh;
+}
+
+.workDesc {
+    display: flex;
+    gap: 20px;
+    max-width: 40vw;
+    margin: 30px 0px;
+}
+
+.workItem {
+    transform: rotate(90deg);
+    fill: var(--6);
+}

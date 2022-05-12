@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import { FC } from 'react';
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
 
@@ -47,10 +48,10 @@ const NavBar: FC<INav> = ( { pages, index } ) => {
                 ) }
             </div>
             <div className={styles.navbarContainer + ' ' + styles.navbarSocials}>
-                <div className={styles.navbarSocial}><FiGithub /></div>
-                <div className={styles.navbarSocial}><FiLinkedin /></div>
-                <div className={styles.navbarSocial}><FiInstagram /></div>
-                <div className={styles.navbarSocial}><FiTwitter /></div>
+                <a target="_blank" href="https://github.com/PeacefulOtter/" rel="noopener noreferrer" className={styles.navbarSocial}><FiGithub /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/natmai/" rel="noopener noreferrer" className={styles.navbarSocial}><FiLinkedin /></a>
+                <a target="_blank" href="https://www.instagram.com/ssh.nathan/" rel="noopener noreferrer" className={styles.navbarSocial}><FiInstagram /></a>
+                <a target="_blank" href="https://mobile.twitter.com/__genjy__" rel="noopener noreferrer" className={styles.navbarSocial}><FiTwitter /></a>
             </div>
         </div>
     )
