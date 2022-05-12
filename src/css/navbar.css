@@ -1,0 +1,39 @@
+
+
+.navbar-wrapper {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88vh;
+    width: min-content;
+    padding: 6vh 40px;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.navbar-btn {
+    display: flex;
+    flex-direction: column;
+    color: var(--8);
+    font-size: 1.1em;
+}
+
+.nav-active {
+    font-weight: bolder;
+}
+
+.navbar-socials svg {
+    color: var(--6);
+    font-size: 1.6em;
+    stroke-width: 1px;
+}
+
+.navbar-btn, .navbar-socials {
+    cursor: pointer;
+}
