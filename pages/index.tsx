@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 
-import Wrapper from './Components/Wrapper';
-import Home from './Components/Home/Home';
-import NavBar from './Components/Navbar/Navbar';
-import Work from './Components/Work/Work';
+import Wrapper from '../Components/Wrapper';
+import Home from '../Components/Home/Home';
+import NavBar from '../Components/Navbar/Navbar';
+import Work from '../Components/Work/Work';
 
-import { Elt, Page } from './models/models';
+import { Elt, Page } from '../models/models';
 
-import './App.css';
 
 const pages: Page[] = [
 	{ name: 'Home',     id: 'home', 	Component: Home },

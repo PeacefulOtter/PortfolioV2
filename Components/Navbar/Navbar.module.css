@@ -1,6 +1,6 @@
 
 
-.navbar-wrapper {
+.navbarWrapper {
     position: fixed;
     top: 0px;
     display: flex;
@@ -11,29 +11,29 @@
     padding: 6vh 40px;
 }
 
-.navbar-container {
+.navbarContainer {
     display: flex;
     flex-direction: column;
     gap: 6vh;
 }
 
-.navbar-btn {
+.navbarBtn {
     display: flex;
     flex-direction: column;
     color: var(--8);
     font-size: 1.1em;
 }
 
-.nav-active {
+.navActive {
     font-weight: bolder;
 }
 
-.navbar-socials svg {
+.navbarSocials svg {
     color: var(--6);
     font-size: 1.6em;
     stroke-width: 1px;
 }
 
-.navbar-btn, .navbar-socials {
+.navbarBtn, .navbarSocials {
     cursor: pointer;
 }
