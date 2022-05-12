@@ -44,7 +44,7 @@ const NavBar: FC<INav> = ( { pages, index } ) => {
         <div className={styles.navbarWrapper}>
             <div className={styles.navbarContainer}>
                 { pages.map( (page: Page, i: number) => 
-                    <NavBtn page={page} i={i} active={i === index} onClick={onClick}/>
+                    <NavBtn key={`navbtn${i}`} page={page} i={i} active={i === index} onClick={onClick}/>
                 ) }
             </div>
             <div className={styles.navbarContainer + ' ' + styles.navbarSocials}>
