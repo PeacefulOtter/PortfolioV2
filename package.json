@@ -1,6 +1,7 @@
 {
   "name": "portfoliov2",
   "version": "0.1.0",
+  "homepage": "https://nathanmaire.netlify.app",
   "dependencies": {
     "next": "latest",
     "react": "latest",
