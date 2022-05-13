@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 
 import Wrapper from '../Components/Wrapper';
-import Home from '../Components/Home/Home';
 import NavBar from '../Components/Navbar/Navbar';
+import Home from '../Components/Home/Home';
 import Work from '../Components/Work/Work';
+import Projects from '../Components/Projects/Projects';
 
 import { Elt, Page } from '../models/models';
 
@@ -11,7 +12,7 @@ import { Elt, Page } from '../models/models';
 const pages: Page[] = [
 	{ name: 'Home',     id: 'home', 	Component: Home },
 	{ name: 'Work', 	id: 'work', 	Component: Work },
-	{ name: 'Projects', id: 'projects', Component: Home },
+	{ name: 'Projects', id: 'projects', Component: Projects },
 	{ name: 'Contact',  id: 'contact',  Component: Work },
 ]
 

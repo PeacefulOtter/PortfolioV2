@@ -1,5 +1,4 @@
 
-import Link from 'next/link';
 import { FC } from 'react';
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
 

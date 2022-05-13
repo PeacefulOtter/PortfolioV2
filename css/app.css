@@ -7,7 +7,19 @@
   --5: #56B899;
   --6: #04DE54;
   --7: #119C44;
-  --8: #119E55;
+  --8: #119E55;    
+
+  --kanit: 'Kanit', sans-serif;
+  --bodoni: 'Libre Bodoni', serif;
+  --major: 'Major Mono Display', monospace;
+  --outfit: 'Outfit', sans-serif;
+  --playfair: 'Playfair Display', serif;
+  --prata: 'Prata', serif;
+  --roboto: 'Roboto Mono', monospace;
+  --secular: 'Secular One', sans-serif;
+  --unifraktur: 'UnifrakturCook', cursive;
+
+  --prj-height: 380px;
 }
 
 
@@ -34,14 +46,34 @@ html, body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .title {
-  font-size: 5em;
+  font-family: var(--bodoni);
+  font-size: 10em;
   color: var(--8);
+}
+
+.emoji {
+  font-size: 3em;
+  margin-top: 7px;
+}
+
+.subtitle {
+  font-family: var(--kanit);
+  font-size: 3em;
 }
 
 span {
   color: var(--6);
+}
+
+.inView {
+  animation: spread 1.3s forwards;
+}
+
+@keyframes spread {
+  0% { margin-left: 0px; margin-right: 0px ;}
+  100% { margin-left: 15px; margin-right: 15px ;}
 }

@@ -1,7 +1,8 @@
 
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FiNavigation2 } from 'react-icons/fi';
+import { useInView } from 'react-intersection-observer';
 
 import styles from './Work.module.css'
 
@@ -35,6 +36,7 @@ const WorkBtn = ( { work, active, onClick }: any ) => {
 
 const Work = () => {
 
+    const [ref, inView] = useInView();
     const [index, setIndex] = useState<number>(0)
 
     const onClick = (i: number) => () => setIndex(i)
@@ -43,9 +45,10 @@ const Work = () => {
 
     return (
         <>
-        <div className={styles.workContainer + ' ' + styles.workHeader}>
+        <div ref={ref} className={styles.workContainer + ' ' + styles.workHeader}>
            <div className='title'>Work</div>
-           <div className={styles.workSecond}>💼 Experiences</div>
+           <div className={`emoji  ${inView ? 'inView' : ''}`}>💼</div>
+           <div className='subtitle'>Experiences</div>
         </div>
         <div className={styles.workContainer}>
             <div className={styles.workBtns}>
