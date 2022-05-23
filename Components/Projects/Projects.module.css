@@ -44,6 +44,7 @@
 
 .desc {
     max-width: 600px;
+    line-height: 25px;
 }
 
 .tags, .links {
@@ -64,6 +65,12 @@
 
 .link {
     font-size: 2em;
+    text-decoration: none;
+    color: var(--4);
+}
+
+.link:hover {
+    color: var(--5);
 }
 
 .img {
